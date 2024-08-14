@@ -1,7 +1,7 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         start , end = 0, len(nums) - 1 
-        curr_min = float("inf")
+        curr_min = nums[0]
         
         while start  <  end :
             mid = start + (end - start ) // 2
